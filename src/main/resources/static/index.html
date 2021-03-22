@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>HomeProject</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="form">
+        <h1>Registration form</h1>
+        <label for="name">Please Enter your name: </label>
+        <div class="row">
+            <input type="text" placeholder="Name" id="name" class="m-1 col-md-4 form-control">
+        </div>
+        <label for="secondName">Please Enter your Second Name: </label>
+        <div class="row">
+            <input type="text" placeholder="Second Name" id="secondName" class="m-1 col-md-4 form-control">
+        </div>
+        <label for="carType">Please Choose а Car: </label>
+
+        <div id="carType" class="row" ></div>
+        <div id="carModel" class="row" ></div>
+    </div>
+
+    <div class="btn btn-primary" onclick="createOwner()">Registration</div>
+    <div class="btn btn-danger" onclick="deleteOwner()" >Delete Owners</div>
+
+</div>
+<div id="owners" class="table-responsive"></div>
+
+<script src="owners.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
